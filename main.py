@@ -18,5 +18,3 @@ with sd.RawInputStream(samplerate=samplerate, blocksize= 8000, device=device[0],
         data = q.get()
         if rec.AcceptWaveform(data):
             print(rec.Result())
-        else:
-            print(rec.PartialResult())
